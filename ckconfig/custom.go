@@ -30,6 +30,12 @@ func yandex(indent int, conf *model.CKManClickHouseConfig, ipv6Enable bool) stri
 	xml.Write("user_files_path", fmt.Sprintf("%sclickhouse/user_files/", conf.Path))
 	xml.Write("access_control_path", fmt.Sprintf("%sclickhouse/access/", conf.Path))
 	xml.Write("format_schema_path", fmt.Sprintf("%sclickhouse/format_schemas/", conf.Path))
+
+
+	// 2022-2-26 add for max_concurrent_queries, 0 is no limit.
+    xml.Write("max_concurrent_queries", 0)
+
+
 	return xml.GetContext()
 }
 

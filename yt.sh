@@ -19,3 +19,20 @@ git branch -M main
 git remote add origin https://github.com/yangtian9999/ckman.git
 git push -u origin main
 
+
+
+zookeeper-0.zookeepers.zookeeper.svc.cluster.local
+zookeeper-1.zookeepers.zookeeper.svc.cluster.local
+zookeeper-2.zookeepers.zookeeper.svc.cluster.local
+
+
+
+10.42.0.4
+4
+5
+6
+
+
+192.168.9.3
+
+

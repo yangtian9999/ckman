@@ -1,0 +1,13 @@
+version: "3"
+services:
+  zookeeper:
+    image: zookeeper:3.7.0
+    ports:
+      - "12181:2181"
+
+  cknode:
+    image: eoitek/ckman-clickhouse:centos-7
+    privileged: true
+    deploy:
+      mode: replicated
+      replicas: 4

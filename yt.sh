@@ -10,3 +10,12 @@ cp /home/hdd/others/clickhouse/clickhouse-install/* /home/hdd/gopath/ckman-2.2.3
 ckman/bin/start
 
 
+
+echo "# ckman" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/yangtian9999/ckman.git
+git push -u origin main
+

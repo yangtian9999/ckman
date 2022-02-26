@@ -1,7 +1,7 @@
 // add for max_concurrent_queries
 xml.Write("max_concurrent_queries", 9999)
 
-make package VERSION=2.2.3
+make package VERSION=2.2.3.1
 
 tar -zvxf ckman-2.2.3-220226.Linux.x86_64.tar.gz
 
